@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a38e783d66.js" crossorigin="anonymous"></script>
+    <!-- <script src="./index.js"></script> -->
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Color Palate Generator</h1>
+    </header>
+    <main>
+        <p>Click refresh to generate.</p>
+        <div id="palat">
+            <div id="color1">
+                <div id="lock1" onclick="lock(1)" class="op-hvr"><i class="fas fa-lock fa-lg"></i></div>
+                <div id="copy1" onclick="copy(1)" class="op-hvr"><i class="fas fa-copy fa-lg"></i><p id="clr1"></p></div>
+            </div>
+            <div id="color2">
+                <div id="lock2" onclick="lock(2)" class="op-hvr"><i class="fas fa-lock fa-lg"></i></div>
+                <div id="copy2" onclick="copy(2)" class="op-hvr"><i class="fas fa-copy fa-lg"></i><p id="clr2"></p></div>
+            </div>
+            <div id="color3">
+                <div id="lock3" onclick="lock(3)" class="op-hvr"><i class="fas fa-lock fa-lg"></i></div>
+                <div id="copy3" onclick="copy(3)" class="op-hvr"><i class="fas fa-copy fa-lg"></i><p id="clr3"></p></div>
+            </div>
+            <div id="color4">
+                <div id="lock4" onclick="lock(4)" class="op-hvr"><i class="fas fa-lock fa-lg"></i></div>
+                <div id="copy4" onclick="copy(4)" class="op-hvr"><i class="fas fa-copy fa-lg"></i><p id="clr4"></p></div>
+            </div>
+        </div>
+        <button id="refresh" onclick="refresh()">Refresh</button>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>

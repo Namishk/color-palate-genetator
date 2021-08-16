@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila&display=swap');
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    font-family: 'Laila', sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to right, #c2e59c, #64b3f4);
+    padding: 3rem;
+    
+}
+
+header h1{
+    font-size: 6rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main p{
+    font-size: 3rem;
+}
+#palat{
+    min-height: 55vh;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem ;
+    width: 90%;
+}
+
+#color1, #color2, #color3, #color4{
+    min-height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#palat p{
+    font-size: 2rem;
+}
+
+#lock1, #copy1, #lock2, #copy2, #lock3, #copy3, #lock4, #copy4{
+    min-height: 50%;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.op-hvr:hover{
+    opacity: 0.5;
+}
+
+#refresh{
+    position: relative;
+    font-size: 5rem;
+    padding: 0.5 1rem;
+    background: linear-gradient(to right,black 50%, white 50%);
+    background-size: 200%, 100%;
+    background-position: 100%;
+    border: 1px solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: background-position 0.5s linear;
+    font-family: 'Laila', sans-serif;
+}
+
+#refresh:hover{
+    background-position: 0%;
+    color: white;
+}
+
+@media (max-width: 768px) {
+
+    header{
+        padding: 1.5rem 2rem;
+    }
+
+    header h1{
+        font-size: 4rem;
+    }
+    main{
+        margin: 0rem;
+    }
+    main p{
+        margin: 0.8rem 0;
+    }
+
+    #palat{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    
+
+    #color1, #color2, #color3, #color4{
+        flex-direction: col;
+        height: 100%;
+        min-width: 100%;
+        flex: 1;
+    
+    }
+
+    .op-hvr{
+        padding: 1rem 0;
+    }
+}
